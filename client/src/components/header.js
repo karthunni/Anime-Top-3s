@@ -1,6 +1,8 @@
 function Header(){
     return (
-        <h1>My Top 5: <strong>Anime </strong></h1>
+        <header>
+        <h1>My Top 3: <strong>Anime </strong></h1>
+        </header>
     )
 }
 

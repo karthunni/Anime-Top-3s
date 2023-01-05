@@ -3,25 +3,26 @@ import AnimeCard from './AnimeCard'
 
 function MainContent(props){
     return(
-        <main>
-            <div className = "main-head">
-                <form className = "search-box" onSubmit={props.HandleSearch}>
-                    <input type="search" 
+        <div>
+        <form onSubmit={props.HandleSearch} >
+                    <input type="search" class="search"
                     placeholder = "search for an anime..." 
                     required
-                    value = {props.search}
                     onChange={e=>props.SetSearch(e.target.value)}>
                     </input>
-                </form>
-                {props.animeList.map(anime => (
-                    <AnimeCard
-                        anime={anime}
-                        key={anime.mal_id}
-                    />
-                ))}
-            </div>
-
-        </main>
+        </form>
+        
+        <div class="anime-cards">
+        {props.animeList.map(anime => (
+            <button class ="anime-card" type="submit" onClick = {e=>props.SetTop5(anime)} key = {anime.mal_id}>
+            
+            <AnimeCard
+                anime={anime}
+            />
+            </button>
+        ))}
+        </div>
+        </div>
     )
 }
 

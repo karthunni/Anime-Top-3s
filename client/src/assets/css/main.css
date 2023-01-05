@@ -1,1 +1,72 @@
-/*# sourceMappingURL=main.css.map */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+.main-image{
+    
+    display: block;
+    width: 400px;
+    margin:auto;
+    padding: 30px;
+   
+}
+.search{
+    display: block;
+    margin:auto;
+    
+}
+header {
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+    
+h1 {
+    text-align: center;
+
+}
+
+h3 {  
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.anime-cards {
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.anime-card{
+    background-color: azure;
+    cursor:pointer;
+    display: inline-block;
+    border-radius: 20px;
+}
+figure {
+    display: inline-table;
+    width: 90%;
+}
+
+figcaption {
+    display:table-caption;
+    font-family: 'Fira Sans', sans-serif;
+    color: black;
+    font-family: 'Trebuchet MS', sans-serif;
+    padding:12px;
+    font-weight: bold;
+
+}
+
+.anime-card:hover {
+    background-color: black;
+}
+
+
+
+
+
+
+
+
